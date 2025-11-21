@@ -1,6 +1,6 @@
 pipeline {
-    agent agent-1
-
+    agent { label 'agent-1'
+          }
     stages {
         stage('Parallel Work') {
             parallel {
